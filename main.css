@@ -1,0 +1,64 @@
+/* Main Menu Styling */
+body {
+  margin: 0;
+}
+main {
+  height: 100vh;
+  text-align: center;
+  background-color: #87d0e8;
+}
+li {
+  width: 41%;
+  display: inline-block;
+  text-align: center;
+}
+ul li p {
+  padding: 15%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.7rem;
+}
+.o, .one, .four{
+  background-color: black;
+  transition: background-color 1000ms;
+  color: orange;
+}
+.g, .two, .five{
+  background-color: white;
+  transition: background-color 1000ms;
+  color: green;
+}
+.y, .seven, .six{
+  background-color: black;
+  transition: background-color 1000ms;
+  color: yellow;
+}
+.b, .three, .eight{
+  background-color: white;
+  transition: background-color 1000ms;
+  color: blue;
+}
+.orange {
+  background-color: #ff9800;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.blue {
+  background-color: blue;
+}
+
+.up {
+  position: relative;
+  top: 0;
+}
+.show {
+  transition: all 2s;
+}
+.hide {
+  width: 0;
+  padding: 0;
+  border: 0;
+}
