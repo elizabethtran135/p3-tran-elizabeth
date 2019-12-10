@@ -1,20 +1,20 @@
 //Global Varibales
-//const myBoxes = document.getElementsByClassName('block');
+const myBoxes = document.getElementsByClassName('block');
 
 //The Functionality
-//function loopThrough() {
-//  const changeColor = () => this.classList.toggle('orange');
+function loopThrough() {
+const changePosition = () => this.classList.toggle('orange');
 
 //*2 on off
-//  for(let i = 0; i < this.textContent.length * 2; i++) { //setTimeout(changeColor, i * 1000);
+for(let i = 0; i < this.textContent.length * 2; i++) { setTimeout(changePosition, i * 1000);
 
-//  };
-//};
+  };
+};
 
 //The Event Listener
-//for (let i=0; i < myBoxes.length; i++) {
-//  myBoxes[i].addEventListener('click', loopThrough);
-//};
+for (let i=0; i < myBoxes.length; i++) {
+  myBoxes[i].addEventListener('click', loopThrough);
+};
 //function loopThrough() {
 //  const changeColor = () => this.classList.toggle('green');
 //function loopThrough() {
@@ -42,16 +42,16 @@
 
 
 
-const tryIt = document.getElementById('test')
+//const tryIt = document.getElementById('test')
 
 //slideout after 3 seconds
-window.addEventListener('click', () => {
-  tryIt.classList.add('yaxis');
-});
+//window.addEventListener('click', () => {
+  //tryIt.classList.remove('down');
+//});
 
-function clickUpperLeft() {
-  alert("left is click")
-}
+//function clickUpperLeft() {
+//  alert("left is click")
+//}
 
 //slide ou
 
