@@ -49,6 +49,9 @@ window.addEventListener('click', () => {
   tryIt.classList.add('yaxis');
 });
 
+function clickUpperLeft() {
+  alert("left is click")
+}
 
 //slide ou
 
