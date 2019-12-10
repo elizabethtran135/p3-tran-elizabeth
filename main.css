@@ -1,16 +1,17 @@
 /* Main Menu Styling */
 body {
   margin: 0;
+  background-color: #87d0e8;
 }
 main {
   height: 100vh;
   text-align: center;
-  background-color: #87d0e8;
 }
 li {
   width: 41%;
   display: inline-block;
   text-align: center;
+  padding: 0%;
 }
 ul li p {
   padding: 15%;
@@ -49,10 +50,15 @@ ul li p {
 .blue {
   background-color: blue;
 }
-
-.up {
-  position: relative;
-  top: 0;
+.down {
+  margin-top: -7%;
+}
+.yaxis {
+  margin-top: 0%;
+  transition: all 2s;
+}
+.xaxis {
+  margin-right: 5%;
 }
 .show {
   transition: all 2s;

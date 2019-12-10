@@ -42,13 +42,14 @@
 
 
 
-const slideOutAd = documentt.getElementById('slideout-ad')
+const tryIt = document.getElementById('test')
 
 //slideout after 3 seconds
 window.addEventListener('click', () => {
-  slideOutAd.classList.remove('hide');
-  slideOutAd.classList.add('show');
+  tryIt.classList.add('yaxis');
 });
 
 
 //slide ou
+
+//function 1 animation left right up down, css is in different 4 ids
