@@ -8,7 +8,8 @@ main {
   text-align: center;
 }
 li {
-  width: 41%;
+  width: 80%;
+  margin: auto;
   display: inline-block;
   text-align: center;
   padding: 0%;
@@ -38,39 +39,33 @@ ul li p {
   color: blue;
 }
 .smaller {
-  margin: 15%;
+  margin: 10%;
 }
 .gray {
   background-color: gray;
 }
-.green {
-  background-color: green;
-}
-.yellow {
-  background-color: yellow;
-}
-.blue {
-  background-color: blue;
-}
+
 .down {
   margin-top: -7%;
 }
-.yaxis {
-  margin-top: 0%;
-  transition: all 2s;
-}
-.xaxis {
-  margin-right: 5%;
-}
+
 .reveal {
   background-color: white;
-  padding: 8%;
+  padding: 4%;
+  width: 70%;
+  margin: auto;
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
-  margin-top: 5%;
-  color: blue;
+  color: darkblue;
 }
 
 .hide {
   display: none;
+}
+
+@media (min-width: 500px){
+  li {
+    width: 41%;
+    margin:inherit;
+  }
 }
