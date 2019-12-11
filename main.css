@@ -38,8 +38,9 @@ ul li p {
   transition: background-color 1000ms;
   color: blue;
 }
-.orange {
+.smallergray {
   margin: 5%;
+  background-color: gray;
 }
 .green {
   background-color: green;
@@ -63,8 +64,7 @@ ul li p {
 .show {
   transition: all 2s;
 }
-.hide {
-  width: 0;
-  padding: 0;
-  border: 0;
+
+.colors {
+
 }

@@ -1,19 +1,43 @@
 //Global Varibales
-const myBoxes = document.getElementsByClassName('block');
 
-//The Functionality
+//layer one
+const layerOne = document.getElementById('layer1');
+const colorBoxes = document.getElementsByClassName('colorblock');
+
+//layer Two
+const layerTwo = document.getElementById('layer2');
+const numberOneBoxes = document.getElementsByClassName('numberblock1');
+
+//layer Three
+const layerThree = document.getElementById('layer3');
+const numberTwoBoxes = document.getElementsByClassName('numberblock2');
+
+//layer four
+const layerFour = document.getElementById('layer4');
+
+//functionality color and shorten loop through
 function loopThrough() {
-const changePosition = () => this.classList.toggle('orange');
+const changeGrayPosition = () => this.classList.toggle('smallergray');
 
 //*2 on off
-for(let i = 0; i < this.textContent.length * 2; i++) { setTimeout(changePosition, i * 1000);
+for(let i = 0; i < this.textContent.length * 2; i++) { setTimeout(changeGrayPosition, i * 700);
 
   };
 };
 
+
+//layer changes
+
+function switchLayerOne() {
+  const switchOne = () => {
+    layer1.classList.add('hide');
+    layer2.classList.remove('hide');
+  };
+  setTimeout(switchOne, this.textContent.length *2 * 700);
+};
 //The Event Listener
-for (let i=0; i < myBoxes.length; i++) {
-  myBoxes[i].addEventListener('click', loopThrough);
+for (let i=0; i < colorBoxes.length; i++) {
+  colorBoxes[i].addEventListener('click', loopThrough);
 };
 //function loopThrough() {
 //  const changeColor = () => this.classList.toggle('green');
