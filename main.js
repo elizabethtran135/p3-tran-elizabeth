@@ -85,13 +85,13 @@ for (let i = 0; i < numberTwoBoxes.length; i++) {
   numberTwoBoxes[i].addEventListener('click', switchLayerThree);
 };
 
-const randomFortune = ['You are amazing','Keep on shining like the star you are', 'You matter and deserve to take up space','Dream Big Little One','Big things are coming your way','You are the best you!','Never let anyone dull your sparkle','You can do anything you set your mind to AND MORE','You are a bright star in the world','Keep you head held high'];
+const randomMessage = ['You are amazing','Keep on shining like the star you are', 'You matter and deserve to take up space','Dream Big Little One','Big things are coming your way','You are the best you!','Never let anyone dull your sparkle','You can do anything you set your mind to AND MORE','You are a bright star in the world','Keep you head held high'];
 
-const showFortune = () => {
-  randomFortune.sort((a, b) => {return 0.5 - Math.random()});
-  const randomFortuneText = document.createTextNode(randomFortune[0]);
-  const randomFortuneParagraph = document.createElement('p');    randomFortuneParagraph.appendChild(randomFortuneText);
-  layerFour.appendChild(randomFortuneParagraph);
+const revealMessage = () => {
+  randomMessage.sort((a, b) => {return 0.9 - Math.random()});
+  const randomMessageeText = document.createTextNode(randomMessage[0]);
+  const randomMessageParagraph = document.createElement('p');    randomMessageParagraph.appendChild(randomMessageText);
+  layerFour.appendChild(randomMessageParagraph);
 };
 
 showFortune();
