@@ -38,8 +38,10 @@ ul li p {
   transition: background-color 1000ms;
   color: blue;
 }
-.smallergray {
-  margin: 5%;
+.smaller {
+  margin: 15%;
+}
+.gray {
   background-color: gray;
 }
 .green {
@@ -65,6 +67,6 @@ ul li p {
   transition: all 2s;
 }
 
-.colors {
-
+.hide {
+  display: none;
 }
