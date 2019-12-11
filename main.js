@@ -68,44 +68,30 @@ for (let i = 0; i < numberOneBoxes.length; i++) {
   numberOneBoxes[i].addEventListener('click', loopThroughSetOne);
   numberOneBoxes[i].addEventListener('click', switchLayerTwo);
 };
-//function loopThrough() {
-//  const changeColor = () => this.classList.toggle('green');
-//function loopThrough() {
-//  const changeColor = () => this.classList.toggle('yellow');
-//function loopThrough() {
-//  const changeColor = () => this.classList.toggle('blue');
-//const slideOutAd = documentt.getElementById('slideout-ad')
-//slide animation remove hide add show
-//arrow
-//const showSlideOutAd = () => {
-//  slideOutAd.classlist.remove('hide');
-//  slideOutAd.classlist.add('show');
-//}
-//vanilla javascript Function
-//var showSlideOutAd = function () {
-//  slideOutAd.classlist.remove('hide');
-//  slideOutAd.classlist.add('show');
-//}
 
-//vanilla javascript function declaration
-//function showSlideOutAd() {
-  //slideOutAd.classlist.remove('hide');
-//  slideOutAd.classlist.add('show');
-//}
+//layer 3 reveal fortune
 
+function switchLayerThree() {
+  const switchThree = () => {
+    layer3.classList.add('hide');
+    layer4.classList.remove('hide');
+  };
+  setTimeout(switchThree, Number(this.textContent) * 2 * 1);
+};
 
+// Event Listener (3)
 
-//const tryIt = document.getElementById('test')
+for (let i = 0; i < numberTwoBoxes.length; i++) {
+  numberTwoBoxes[i].addEventListener('click', switchLayerThree);
+};
 
-//slideout after 3 seconds
-//window.addEventListener('click', () => {
-  //tryIt.classList.remove('down');
-//});
+const randomFortune = ['You are amazing','Keep on shining like the star you are', 'You matter and deserve to take up space','Dream Big Little One','Big things are coming your way','You are the best you!','Never let anyone dull your sparkle','You can do anything you set your mind to AND MORE','You are a bright star in the world','Keep you head held high'];
 
-//function clickUpperLeft() {
-//  alert("left is click")
-//}
+const showFortune = () => {
+  randomFortune.sort((a, b) => {return 0.5 - Math.random()});
+  const randomFortuneText = document.createTextNode(randomFortune[0]);
+  const randomFortuneParagraph = document.createElement('p');    randomFortuneParagraph.appendChild(randomFortuneText);
+  layerFour.appendChild(randomFortuneParagraph);
+};
 
-//slide ou
-
-//function 1 animation left right up down, css is in different 4 ids
+showFortune();

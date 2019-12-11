@@ -20,7 +20,6 @@ ul li p {
 }
 .o, .one, .four{
   background-color: black;
-  transition: background-color 1000ms;
   color: orange;
 }
 .g, .two, .five{
@@ -63,8 +62,13 @@ ul li p {
 .xaxis {
   margin-right: 5%;
 }
-.show {
-  transition: all 2s;
+.reveal {
+  background-color: white;
+  padding: 8%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  margin-top: 5%;
+  color: blue;
 }
 
 .hide {
